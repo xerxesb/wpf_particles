@@ -1,0 +1,10 @@
+D:\source\windowsclient\particles\csharp\bin\Debug\SDKSample.exe
+D:\source\windowsclient\particles\csharp\bin\Debug\SDKSample.pdb
+D:\source\windowsclient\particles\csharp\obj\Debug\ResolveAssemblyReference.cache
+D:\source\windowsclient\particles\csharp\obj\Debug\Window1.baml
+D:\source\windowsclient\particles\csharp\obj\Debug\Window1.g.cs
+D:\source\windowsclient\particles\csharp\obj\Debug\app.g.cs
+D:\source\windowsclient\particles\csharp\obj\Debug\SDKSample_MarkupCompile.cache
+D:\source\windowsclient\particles\csharp\obj\Debug\SDKSample.g.resources
+D:\source\windowsclient\particles\csharp\obj\Debug\SDKSample.exe
+D:\source\windowsclient\particles\csharp\obj\Debug\SDKSample.pdb
