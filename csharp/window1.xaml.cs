@@ -261,7 +261,7 @@ namespace Particles
 
             frameTimer = new System.Windows.Threading.DispatcherTimer();
             frameTimer.Tick += OnFrame;
-            frameTimer.Interval = TimeSpan.FromSeconds(1.0 / 60.0);
+            frameTimer.Interval = TimeSpan.FromSeconds(.50 / 60.0);
             frameTimer.Start();
 
             this.spawnPoint = new Point3D(0.0, 0.0, 0.0);
@@ -306,23 +306,23 @@ namespace Particles
             }
 
             pm.Update((float)elapsed);
-            pm.SpawnParticle(this.spawnPoint, 10.0, Colors.Red, rand.NextDouble(), 2.5 * rand.NextDouble());
-            pm.SpawnParticle(this.spawnPoint, 10.0, Colors.Orange, rand.NextDouble(), 2.5 * rand.NextDouble());
-            pm.SpawnParticle(this.spawnPoint, 10.0, Colors.Silver, rand.NextDouble(), 2.5 * rand.NextDouble());
-            pm.SpawnParticle(this.spawnPoint, 10.0, Colors.Gray, rand.NextDouble(), 2.5 * rand.NextDouble());
-            pm.SpawnParticle(this.spawnPoint, 10.0, Colors.Red, rand.NextDouble(), 2.5 * rand.NextDouble());
-            pm.SpawnParticle(this.spawnPoint, 10.0, Colors.Orange, rand.NextDouble(), 2.5 * rand.NextDouble());
-            pm.SpawnParticle(this.spawnPoint, 10.0, Colors.Silver, rand.NextDouble(), 2.5 * rand.NextDouble());
-            pm.SpawnParticle(this.spawnPoint, 10.0, Colors.Gray, rand.NextDouble(), 2.5 * rand.NextDouble());
-            pm.SpawnParticle(this.spawnPoint, 10.0, Colors.Red, rand.NextDouble(), 2.5 * rand.NextDouble());
-            pm.SpawnParticle(this.spawnPoint, 10.0, Colors.Yellow, rand.NextDouble(), 2.5 * rand.NextDouble());
-            pm.SpawnParticle(this.spawnPoint, 10.0, Colors.Silver, rand.NextDouble(), 2.5 * rand.NextDouble());
-            pm.SpawnParticle(this.spawnPoint, 10.0, Colors.Yellow, rand.NextDouble(), 2.5 * rand.NextDouble());
+            pm.SpawnParticle(this.spawnPoint, new Random().Next(1, 50), Colors.Red, rand.NextDouble() * rand.Next(0, 3), 2.5 * rand.NextDouble());
+            pm.SpawnParticle(this.spawnPoint, new Random().Next(1, 50), Colors.Orange, rand.NextDouble() *  rand.Next(0, 3), 2.5 * rand.NextDouble());
+            pm.SpawnParticle(this.spawnPoint, new Random().Next(1, 50), Colors.Silver, rand.NextDouble() *  rand.Next(0, 3), 2.5 * rand.NextDouble());
+            pm.SpawnParticle(this.spawnPoint, new Random().Next(1, 50), Colors.Gray, rand.NextDouble() *  rand.Next(0, 3), 2.5 * rand.NextDouble());
+            pm.SpawnParticle(this.spawnPoint, new Random().Next(1, 50), Colors.Red, rand.NextDouble() *  rand.Next(0, 3), 2.5 * rand.NextDouble());
+            pm.SpawnParticle(this.spawnPoint, new Random().Next(1, 50), Colors.Orange, rand.NextDouble() *  rand.Next(0, 3), 2.5 * rand.NextDouble());
+            pm.SpawnParticle(this.spawnPoint, new Random().Next(1, 50), Colors.Silver, rand.NextDouble() *  rand.Next(0, 3), 2.5 * rand.NextDouble());
+            pm.SpawnParticle(this.spawnPoint, new Random().Next(1, 50), Colors.Gray, rand.NextDouble() *  rand.Next(0, 3), 2.5 * rand.NextDouble());
+            pm.SpawnParticle(this.spawnPoint, new Random().Next(1, 50), Colors.Red, rand.NextDouble() *  rand.Next(0, 3), 2.5 * rand.NextDouble());
+            pm.SpawnParticle(this.spawnPoint, new Random().Next(1, 50), Colors.Yellow, rand.NextDouble() *  rand.Next(0, 3), 2.5 * rand.NextDouble());
+            pm.SpawnParticle(this.spawnPoint, new Random().Next(1, 50), Colors.Silver, rand.NextDouble() *  rand.Next(0, 3), 2.5 * rand.NextDouble());
+            pm.SpawnParticle(this.spawnPoint, new Random().Next(1, 50), Colors.Yellow, rand.NextDouble() *  rand.Next(0, 3), 2.5 * rand.NextDouble());
 
             double c = Math.Cos(this.totalElapsed);
-            double s = Math.Sin(this.totalElapsed);
+            double s = Math.Cos(this.totalElapsed);
 
-            this.spawnPoint = new Point3D(s * 32.0, c * 32.0, 0.0);
+//            this.spawnPoint = new Point3D(s * 32.0, c * 32.0, 0.0);
         }
 
     }
